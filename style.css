@@ -22,6 +22,7 @@
     height: 100vh;
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: whitesmoke;
 }
 .todo {
@@ -29,7 +30,6 @@
     height: 65vh;
     background-color: #0d6efd;
     border: 1px solid #0d6efd;
-    margin-top: 100px;
     border-radius: 20px;
     display: flex;
 }
@@ -145,41 +145,21 @@
     .todo { width: 760px; }}
 @media only screen and (max-width: 800px) {
     .todo {
-        width: 100vw;
-        height: 100vh;
+        width: 98vw;
+        height: 90vh;
         margin-top: 0px;
     }}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media only screen and (max-width: 650px) {
+    .todo input { width: 300px; }
+    .todo button { width: 80px; }}
+@media only screen and (max-width: 510px) {
+    .todo input { width: 200px; }
+    .todo button { width: 70px; }}
+@media only screen and (max-width: 400px) {
+    .todo input { width: 100px; }
+    .todo button { width: 60px; }}
+@media only screen and (max-width: 280px) {
+    .todo { background-color: pink; }
+    .todo input { width: 50px; }
+    .todo button { width: 50px; }
+    #todo-baslik { font-size: 25px; }}
