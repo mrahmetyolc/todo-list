@@ -5,6 +5,19 @@
     margin: 0;
     padding: 0;
 }
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: white; 
+}
+
+
+
 .container {
     height: 100vh;
     display: flex;
@@ -20,8 +33,9 @@
     border-radius: 20px;
     display: flex;
 }
-.sagmenu {
+.solmenu {
     width: 60px;
+    min-width: 60px;
     height: 100%;
     background-color: whitesmoke;
     border-radius: 19px;
@@ -38,7 +52,7 @@
     width: 40px;
     margin-top: 30px;
 }
-.solmenu {
+.sagmenu {
     width: 1300px;
     height: 100%;
     border-radius: 30px;
@@ -55,6 +69,7 @@
     background-color: white;
     display: flex;
     align-items: center;
+    border-bottom: 1px solid black;
 }
 #todo-form, #filter, #todo-form-buton {
     margin-left: 20px;
@@ -120,3 +135,51 @@
     width: 40px;
     margin-bottom: 10px;
 }
+
+
+@media only screen and (max-width: 1400px) {
+    .todo { width: 1160px; }}
+@media only screen and (max-width: 1200px) {
+    .todo { width: 960px; }}
+@media only screen and (max-width: 1000px) {
+    .todo { width: 760px; }}
+@media only screen and (max-width: 800px) {
+    .todo {
+        width: 100vw;
+        height: 100vh;
+        margin-top: 0px;
+    }}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
