@@ -6,36 +6,60 @@
     padding: 0;
 }
 .container {
+    height: 100vh;
     display: flex;
     justify-content: center;
+    background-color: whitesmoke;
 }
 .todo {
-    width: 60%;
+    width: 1360px;
+    height: 65vh;
     background-color: #0d6efd;
+    border: 1px solid #0d6efd;
     margin-top: 100px;
     border-radius: 20px;
-    padding-left: 20px;
-    padding-top: 20px;
-}
-#todo-baslik, h2 {
-    color: white;
-    font-family: 'Comfortaa';
-    margin: 10px 0;
-}
-.topbar {
-    height: 200px;
-    background-color: red;
     display: flex;
 }
-.kisayollar {}
-.kisayollar img {
-    border: 1px solid black;
-    padding: 10px;
-    border-radius: 50% 50%;
+.sagmenu {
+    width: 60px;
+    height: 100%;
+    background-color: whitesmoke;
+    border-radius: 19px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-
-
-
+.kisayollar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+.kisayollar img {
+    width: 40px;
+    margin-top: 30px;
+}
+.solmenu {
+    width: 1300px;
+    height: 100%;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+}
+#todo-baslik {
+    color: white;
+    font-family: 'Comfortaa';
+    margin: 30px 20px;
+}
+.topbar {
+    height: 70px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+#todo-form, #filter, #todo-form-buton {
+    margin-left: 20px;
+    display: none;
+}
 .todo input {
     width: 400px;
     height: 40px;
@@ -48,11 +72,10 @@
     width: 120px;
     height: 40px;
     font-size: 20px;
+    color: rgb(0, 170, 0);
     background-color: white;
     border-radius: 5px;
-    border: none;
-    background-color: white;
-    margin-left: 10px;
+    border: 1px solid rgb(0, 170, 0);
     cursor: pointer;
 }
 .todo button:hover {
@@ -61,26 +84,18 @@
     transition-property: all;
     transition-duration: 400ms;
 }
-.aramadiv {
-    height: 100px;
-    display: flex;
-    align-items: center;
-}
-#aramayeriac {
-    margin: 0 20px;
-}
-
 .todolar {
+    overflow: auto;
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
     padding-top: 5px;
 }
 .todolar-oge {
-    width: 98%;
-    height: 80px;
-    background-color: #ffcdd2;
+    width: 95%;
+    height: 70px;
+    background-color: white;
     margin: 5px 0;
     padding-left: 10px;
     border-radius: 10px;
@@ -90,51 +105,18 @@
     font-size: 22px;
 }
 .todolar-oge a {
-    /* border: 1px solid #ff1744;
-    background-color: #ff1744;
-    text-decoration: none;
-    color: white;
-    border-radius: 5px;
-    padding: 10px 20px; */
-    margin-right: 20px;
-}
-.todolari-temizle {
-    border: 1px solid black;
-    background-color: black;
-    text-decoration: none;
-    color: white;
     border-radius: 5px;
     padding: 10px 20px;
-    margin: 20px 0;
+    margin-right: 20px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.todolar-oge a:hover {
+    background-color: #ff1744;
+}
+.temizlekisayol {
+    display: flex;
+    justify-content: center;
+}
+.todolari-temizle img {
+    width: 40px;
+    margin-bottom: 10px;
+}

@@ -35,7 +35,7 @@ function addUI(YeniToDoYazi){
     const YeniToDoSil = document.createElement("a");
     YeniToDo.className = "todolar-oge";
     YeniToDoSil.href = "#";
-    YeniToDoSil.innerHTML = "<img src='trash.svg' class='silbutonu' width='20px'>";
+    YeniToDoSil.innerHTML = "<img src='trash.svg' class='silbutonu' width='22px'>";
     YeniToDo.appendChild(document.createTextNode(YeniToDoYazi));
     YeniToDo.appendChild(YeniToDoSil);
     ToDoList.appendChild(YeniToDo);
@@ -106,3 +106,26 @@ function TumunuTemizleFonksiyonu(e){
         }
     }
 }
+
+
+
+const EkleBolumAc = document.querySelector("#eklebolumac");
+const AraBolumAc = document.querySelector("#aramabolumac");
+const Topbar = document.querySelector(".topbar");
+
+EkleBolumAc.addEventListener("click",function(e){
+    document.querySelector("#filter").style.display = "none";
+    const ToDoForm = document.querySelector("#todo-form");
+    const ToDoFormButon = document.querySelector("#todo-form-buton")
+    ToDoForm.style.display = "flex";
+    ToDoFormButon.style.display = "block";
+    console.log("Ekle");
+})
+
+AraBolumAc.addEventListener("click",function(e){
+    document.querySelector("#todo-form").style.display = "none";
+    document.querySelector("#todo-form-buton").style.display = "none";
+    const AraForm = document.querySelector("#filter");
+    AraForm.style.display = "flex";
+    console.log("Ara");
+})

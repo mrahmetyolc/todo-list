@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="all.css">
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
     <title>ToDo</title>
@@ -11,27 +13,30 @@
 <body>
     <div class="container">
         <div class="todo">
-            <h1 id="todo-baslik">ToDo List</h1>
-            <div class="topbar">
+            <div class="sagmenu">
                 <div class="kisayollar">
-                    <a href="#" id="eklebolumac"><img src="plus.svg" width="35px"></a>
-                    <a href="#" id="aramabolumac"><img src="magnifying-glass.svg" width="35px"></a>
+                    <a href="#" id="eklebolumac"><img src="circle-plus.svg"></a>
+                    <a href="#" id="aramabolumac"><img src="magnifying-glass.svg"></a>
                 </div>
-                <div class="eklediv">
-                    <form id="todo-form" name="form">
-                        <input type="text" name="todo" id="todo" placeholder="Yeni bir tane ekleyin">
-                        <button type="submit" id="todo-form-buton">Ekle</button>
-                    </form>
-                </div>
-                <div class="aramadiv">
-                    <input type="text" name="filter" id="filter" placeholder="Bir To-Do arayın">
+                <div class="temizlekisayol">
+                    <a id="clear-todos" class="todolari-temizle" href="#"><img src="trash-can-list.svg"></a>
                 </div>
             </div>
-            
-            <!-- <h2 id="tasks-title">Todolar</h2> -->
-            <div class="todolar"></div>
-            <hr> <br>
-            <a id="clear-todos" class="todolari-temizle" href="#">Tüm Taskları Temizleyin</a> 
+            <div class="solmenu">
+                <h1 id="todo-baslik">ToDo List</h1>
+                <div class="topbar">
+                    <div class="eklediv">
+                        <form id="todo-form" name="form">
+                            <input type="text" name="todo" id="todo" placeholder="Yeni bir tane ekleyin">
+                            <button type="submit" id="todo-form-buton">Ekle</button>
+                        </form>
+                    </div>
+                    <div class="aramadiv">
+                        <input type="text" name="filter" id="filter" placeholder="Bir To-Do arayın">
+                    </div>
+                </div>
+                <div class="todolar"></div>
+            </div>
         </div>
     </div>
     <script src="app.js"></script>
